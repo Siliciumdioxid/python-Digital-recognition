@@ -53,14 +53,12 @@
 ```
 project/
 │
-├── train_model.py            # 训练CNN模型的脚本
-├── recognize_digit_gui.py     # 手写数字识别图形界面
-├── cnn2.pkl                  # 训练好的模型（由train_model.py生成）
-├── README.md                 # 本文档
-└── requirements.txt          # 项目依赖列表
+├── test.py                   # 主程序
+├── cnn2.pkl                  # 训练好的模型
+└── README.md                 # 本文档
 ```
 
-### 训练模型脚本（`train_model.py`）：
+### 训练模型脚本：
 
 该脚本会训练卷积神经网络，并将训练好的模型保存到`cnn2.pkl`。
 
@@ -110,7 +108,7 @@ for epoch in range(5):  # 训练5个epoch
 torch.save(cnn.state_dict(), 'cnn2.pkl')
 ```
 
-### 手写数字识别图形界面（`recognize_digit_gui.py`）：
+### 手写数字识别图形界面：
 
 该脚本提供了一个用户界面，允许用户绘制数字并识别。
 

@@ -63,3 +63,4 @@ pip install torch torchvision pillow numpy
 ## 注意事项
 - 确保在首次使用时训练模型并保存权重。
 - 如果遇到任何问题，请检查依赖是否安装正确，并确保数据集下载成功。
+ 如果python Pillow ImageGrab.grab()无法在虚拟机上运行：https://www.saoniuhuo.com/question/detail-2546520.html

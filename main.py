@@ -1,15 +1,15 @@
-import torch
-import torch.nn as nn
-import tkinter as tk
+import torch#PyTorch 是一个开源的机器学习库，主要用于进行计算机视觉（CV）、自然语言处理（NLP）、语音识别等领域的研究和开发。
+import torch.nn as nn#nn是Neural Network的简称，帮助程序员方便执行如下的与神经网络相关的行为：（1）创建神经网络（2）训练神经网络（3）保存神经网络4）恢复神经网络
+import tkinter as tk#Python GUI编程(Tkinter)
 from tkinter import Canvas
-from PIL import Image, ImageTk, ImageGrab
-import numpy as np
-import torchvision
-import torch.utils.data as Data
+from PIL import Image, ImageTk, ImageGrab#要点：PIL库是一个具有强大图像处理能力的第三方库，不仅包含了丰富的像素、色彩操作功能，还可以用于图像归档和批量处理。
+import numpy as np#NumPy，一言以蔽之，是Python中基于数组对象的科学计算库。它是Python语言的一个扩展程序库，支持大量的维度数组与矩阵运算，以及大量的数学函数库
+import torchvision#torchvision独立于pytorch，专门用来处理图像，通常用于计算机视觉领域。
+import torch.utils.data as Data#torch.utils.data.Dataset是代表自定义数据集方法的类，用户可以通过继承该类来自定义自己的数据集类，在继承时要求用户重载__len__()和__getitem__()这两个魔法方法。
 import torchvision.transforms as transforms
 from torch.autograd import Variable
 
-# 定义CNN模型
+# 定义CNN模型（卷积神经网络（Convolutional Neural Networks，简称CNN），https://blog.csdn.net/AI_dataloads/article/details/133250229）
 class CNN(nn.Module):
     def __init__(self):
         super(CNN, self).__init__()
